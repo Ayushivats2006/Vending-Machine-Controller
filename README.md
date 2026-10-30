@@ -95,7 +95,7 @@ FSM-Based-Vending-Machine-Controller/
 ├── Output 2.png
 ├── Output Waveform.png
 └── README.md
-
+```
 ## Module Interface
 
 The vending machine is implemented as a Verilog module named `vending_machine`, with the following interface:
