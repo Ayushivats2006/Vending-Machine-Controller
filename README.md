@@ -86,16 +86,15 @@ The following table illustrates all 27 valid state transitions for the nine stat
 
 ## File Structure
 
-The project contains separate files for the RTL implementation, testbench, simulation waveform, and synthesized hardware representation.
-
 ```text
-vending_machine/
-├── design.sv             # FSM controller implementation
-├── testbench.sv          # Testbench for functional verification
-├── dump.vcd              # Simulation waveform output
-├── vending_machine.json  # Generated synthesis netlist
-└── vending_machine.svg   # Netlist circuit visualization
-```
+FSM-Based-Vending-Machine-Controller/
+├── verilog code
+├── Verilog Testbench
+├── Netlist.svg
+├── Output 1.png
+├── Output 2.png
+├── Output Waveform.png
+└── README.md
 
 ## Module Interface
 
