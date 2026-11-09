@@ -88,14 +88,16 @@ The following table illustrates all 27 valid state transitions for the nine stat
 
 ```text
 FSM-Based-Vending-Machine-Controller/
-├── verilog code
-├── Verilog Testbench
-├── Netlist.svg
-├── Output 1.png
-├── Output 2.png
-├── Output Waveform.png
-└── README.md
+│
+├── vending_machine.sv     # FSM controller implementation
+├── testbench.sv           # Testbench for functional verification
+├── Netlist.svg            # Synthesized circuit diagram
+├── Output 1.png           # Simulation output screenshot
+├── Output 2.png           # Simulation output screenshot
+├── Output Waveform.png    # Simulation waveform
+└── README.md              # Project documentation
 ```
+
 ## Module Interface
 
 The vending machine is implemented as a Verilog module named `vending_machine`, with the following interface:
@@ -178,7 +180,7 @@ yosys
 Execute the following commands within the Yosys environment:
 
 ```bash
-read_verilog vending_machine.v
+read_verilog -sv vending_machine.sv
 prep -top vending_machine
 write_json vending_machine.json
 exit
