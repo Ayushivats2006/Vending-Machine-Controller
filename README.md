@@ -189,8 +189,7 @@ exit
 Once the JSON netlist is generated, use the following commands to create and open the circuit diagram.
 
 ```bash
-netlistsvg vending_machine.json -o vending_machine.svg
-open vending_machine.svg
+netlistsvg vending_machine.json -o Netlist.svg
 ```
 
 The resulting SVG file displays the synthesized circuit structure and provides a visual representation of the hardware generated from the RTL implementation.
@@ -215,5 +214,3 @@ The resulting SVG file displays the synthesized circuit structure and provides a
 - Invalid state encodings are handled using the `default` branch, which directs the FSM back to the initial state S0.
 
 ---
-
-**Note:** For SystemVerilog source files (`.sv`), use `read_verilog -sv design.sv` in Yosys instead of `read_verilog vending_machine.v`, if that is the actual filename.
